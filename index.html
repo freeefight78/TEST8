@@ -25,7 +25,7 @@
     <link href="js/selectivity-3.1.0/selectivity-jquery.min.css" rel="stylesheet" />
      <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
-
+<!-- FIN DU SUPP-->
 
 </head>
 
@@ -44,8 +44,58 @@
 		<div id="hi">
 			<div class='popularResolution para-totalCenterAlign'>
 			<div class='story'>
-				<div class="padded"><h1>Hi!</h1> That’s a parallax engine. Navigate by pressing keyboard arrows or rotating mouse wheel →</div>
-			</div></div>
+			  <div class="col-md-12 col-sm-12"> 
+                        
+                        <fieldset>
+                             <label for="Stage">Intitulé de la formation</label>
+                            <!--                      <input id="Stage" name="Stage" placeholder="Azure AZ 900" />-->
+                            <span id="Stage" class="selectivity-input"></span>
+                        </fieldset>
+                    </div>
+                    <div id="show_formation_software_installed" style="display: none;">
+                        <div class="col-md-12 col-sm-12">
+                            <fieldset>
+                                <label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
+                                <select name="formation_software_installed" id="formation_software_installed">
+                                    <option value="non">non</option>
+                                    <option value="oui">oui</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div>
+                       <div class="col-md-6 col-sm-6">
+                         <table>
+                              <label for="name">Nom et Prénom</label>
+                            <input id="name" name="name"  required placeholder="Aires Jérémy" />
+                        </fieldset>
+                         </tr>
+                         <tr>
+                        <fieldset>
+                            <label for="email">Votre adresse Mail</label>
+                            <input id="email" name="email" type="email" value=""
+                                   required placeholder="Nom.prénom@gmail.com"/>
+                        </fieldset>
+                         </tr>
+
+                        <tr>  
+                        <fieldset>
+                            <label for="Numero">Téléphone (facultatif)</label>
+                            <input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
+                        </fieldset>
+                         </tr>
+                         <tr>
+                        <fieldset>
+                            <label for="Date">Date de formation</label>
+                            <input type="date" name="Date" id="start" name="trip-start"
+                                   value=""
+                                   min="2020-01-01" max="2020-12-31">
+                        </fieldset>
+                         </tr>                 
+                         </table>
+                    </div>
+
+				</div></div>
 		</div>
 
 		<div id="simple">
